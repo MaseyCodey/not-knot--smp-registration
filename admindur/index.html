@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin • Not KNOT SMP</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../config.js" defer></script>
+  <script src="../assets/admin.js" defer></script>
+</head>
+<body>
+  <div class="sky-orb sky-orb-one"></div>
+  <div class="sky-orb sky-orb-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Not KNOT SMP home">
+      <span class="brand-mark">NK</span>
+      <span>
+        <strong>Admin</strong>
+        <small>/admindur</small>
+      </span>
+    </a>
+    <nav>
+      <a href="../" class="nav-link">Quiz</a>
+    </nav>
+  </header>
+
+  <main class="shell admin-shell">
+    <section class="card hero admin-hero">
+      <div>
+        <p class="eyebrow">Response dashboard</p>
+        <h1>Admin Login</h1>
+        <p class="subtitle">Enter your admin key to view SMP applications.</p>
+      </div>
+    </section>
+
+    <section id="loginCard" class="card form-card">
+      <form id="loginForm" class="login-form">
+        <label class="field">
+          <span>Admin key</span>
+          <input id="adminKey" type="password" required placeholder="Enter admin key">
+          <small>If you have not deployed the backend yet, use the local demo password from config.js.</small>
+        </label>
+        <div id="loginMessage" class="message" role="status" aria-live="polite"></div>
+        <button class="btn primary" type="submit">Unlock dashboard</button>
+      </form>
+    </section>
+
+    <section id="dashboard" class="card form-card hidden">
+      <div class="section-title dashboard-title">
+        <div>
+          <h2>Responses</h2>
+          <p id="responseCount">No responses loaded yet.</p>
+        </div>
+        <div class="actions slim-actions">
+          <button id="refreshBtn" class="btn ghost" type="button">Refresh</button>
+          <button id="downloadBtn" class="btn ghost" type="button">Download CSV</button>
+          <button id="logoutBtn" class="btn danger" type="button">Lock</button>
+        </div>
+      </div>
+
+      <div id="adminMessage" class="message" role="status" aria-live="polite"></div>
+      <div id="responses" class="responses"></div>
+    </section>
+  </main>
+</body>
+</html>
