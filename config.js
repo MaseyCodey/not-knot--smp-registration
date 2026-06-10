@@ -12,11 +12,11 @@ window.SMP_CONFIG = {
 
   // Paste your Google Apps Script Web App URL here after deployment.
   // Example: "https://script.google.com/macros/s/AKfycbxxxxx/exec"
-  appsScriptUrl: "",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbxqW0n9W5dlqy81RDTSKUyzWZUOL6dUpMtXOqOysZNx0q4jTypn8zEh_u1e_vPWC_uKww/exec",
 
   // Local demo admin password only. This is NOT secure for a public site.
   // Real admin security comes from the ADMIN_KEY inside Code.gs.
-  localAdminPassword: "changeme",
+  localAdminPassword: "AdminNotKnot2026",
 
   // Helpful for testing. Keeps a backup copy in the browser that submitted it.
   keepLocalBackup: true
