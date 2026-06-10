@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not KNOT SMP Registration</title>
+  <meta name="description" content="Apply to join the Not KNOT SMP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="config.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="sky-orb sky-orb-one"></div>
+  <div class="sky-orb sky-orb-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Not KNOT SMP home">
+      <span class="brand-mark">NK</span>
+      <span>
+        <strong>Not KNOT SMP</strong>
+        <small>registration portal</small>
+      </span>
+    </a>
+    <nav>
+      <a href="./admindur/" class="nav-link">Admin</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero card">
+      <div class="hero-copy">
+        <p class="eyebrow">Minecraft SMP whitelist</p>
+        <h1 id="formTitle">Not KNOT SMP registration</h1>
+        <p id="formSubtitle" class="subtitle">You want to join. We all know.</p>
+        <div class="pill-row" aria-label="server rules">
+          <span class="pill">No griefing</span>
+          <span class="pill">Be chill</span>
+          <span class="pill">Java or Bedrock</span>
+        </div>
+      </div>
+      <div class="cube-card" aria-hidden="true">
+        <div class="cube-top"></div>
+        <div class="cube-face">SMP</div>
+      </div>
+    </section>
+
+    <section class="card form-card">
+      <div class="section-title">
+        <h2>Quiz / Application</h2>
+        <p>Fields marked with <span class="required">*</span> are required.</p>
+      </div>
+
+      <form id="quizForm" novalidate>
+        <div class="grid two">
+          <label class="field">
+            <span>Name <b>*</b></span>
+            <input name="name" type="text" autocomplete="name" required placeholder="Your name">
+          </label>
+
+          <label class="field">
+            <span>Email / Phone Number <b>*</b></span>
+            <input name="contact" type="text" autocomplete="email" required placeholder="Email or phone">
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Discord <em>(not needed)</em></span>
+          <input name="discord" type="text" placeholder="Discord username if you want">
+        </label>
+
+        <fieldset class="field fieldset">
+          <legend>When can you play? <b>*</b></legend>
+          <div class="checks">
+            <label><input type="checkbox" name="days" value="Monday"> Monday</label>
+            <label><input type="checkbox" name="days" value="Tuesday"> Tuesday</label>
+            <label><input type="checkbox" name="days" value="Wednesday"> Wednesday</label>
+            <label><input type="checkbox" name="days" value="Thursday"> Thursday</label>
+            <label><input type="checkbox" name="days" value="Friday"> Friday</label>
+            <label><input type="checkbox" name="days" value="Saturday"> Saturday</label>
+            <label><input type="checkbox" name="days" value="Sunday"> Sunday</label>
+          </div>
+        </fieldset>
+
+        <label class="field">
+          <span>What's your birthday? <b>*</b></span>
+          <input name="birthday" type="text" required placeholder="Example: May 12">
+          <small>Only share what you are comfortable sharing.</small>
+        </label>
+
+        <fieldset class="field fieldset">
+          <legend>I understand there is no griefing. <b>*</b></legend>
+          <div class="radios">
+            <label><input type="radio" name="noGriefing" value="Yes" required> Yes</label>
+            <label><input type="radio" name="noGriefing" value="No" required> No</label>
+          </div>
+        </fieldset>
+
+        <label class="field">
+          <span>Your application video <b>*</b></span>
+          <input name="video" type="url" required placeholder="YouTube / file sharing link">
+          <small>Upload it somewhere and set viewing to everyone with the link.</small>
+        </label>
+
+        <div class="grid two">
+          <label class="field">
+            <span>Minecraft IGN / Username</span>
+            <input name="ign" type="text" placeholder="Your Minecraft name">
+          </label>
+
+          <fieldset class="field fieldset compact">
+            <legend>Minecraft Edition</legend>
+            <div class="radios">
+              <label><input type="radio" name="edition" value="Java"> Java</label>
+              <label><input type="radio" name="edition" value="Bedrock"> Bedrock</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <details class="help-box">
+          <summary>How do I tell Java vs Bedrock?</summary>
+          <p><strong>Java Edition</strong> is usually on PC with the Java launcher. <strong>Bedrock Edition</strong> is usually on console, phone, Windows Store, or says “Minecraft for Windows.”</p>
+        </details>
+
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">Submit application</button>
+          <button class="btn ghost" type="reset">Clear form</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Not KNOT SMP • Built for GitHub Pages</p>
+  </footer>
+</body>
+</html>
